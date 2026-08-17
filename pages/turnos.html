@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <!-- Configuracion basica -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+        <title>Turnos | Diagnóstico por Imágenes</title>
+        <meta name="description"
+        content="Solicitá tu turno de forma rápida para cualquiera de nuestros estudios de diagnóstico por imágenes.">
+        <meta name="keywords"
+        content="diagnóstico por imágenes, resonancia magnética, tomografía, radiología, estudios médicos">
+        <meta name="author" content="Leandro Nicolás Oliva">
+    <!-- Favicon -->
+        <link rel="shortcut icon" href="../Imagenes/Logo.png" type="image/x-icon">
+    <!-- Hoja de estilos -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- ================= HEADER ================= -->
+
+        <header>
+            <div class="logo">
+                <img src="../Imagenes/Logo.png" alt="Logo del Centro DPI" width="100">
+                <div>
+                    <h1>DPI - Diagnóstico por Imágenes</h1>
+                    <p>Centro de Diagnóstico por Imágenes</p>
+                </div>
+            </div>
+        </header>
+
+    <!-- ================= NAV ================= -->
+
+        <!-- <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./estudios.html">Estudios</a></li>
+                <li><a href="#">Turnos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav> -->
+                <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    DPI
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="./estudios.html">Estudios</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Turnos</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- ================= MAIN ================= -->
+
+        <main>
+            <section>
+                <h2>Solicitud de Turnos</h2>
+                    <p>
+                        Completá el siguiente formulario para solicitar un turno. Nuestro equipo se comunicará con vos a la brevedad para confirmar la fecha y el horario disponible.
+                    </p>
+            </section>
+
+            <section>
+                <form>
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required>
+
+                    <label for="estudio">Estudio solicitado</label>
+
+                    <select id="estudio">
+                        <option value="_blank" selected disabled>Seleccione una opción...</option>
+                        <option>Radiología Digital</option>
+                        <option>Tomografía Computada</option>
+                        <option>Resonancia Magnética</option>
+                    </select>
+
+                    <label for="mensaje">Observaciones</label>
+
+                    <textarea id="mensaje" rows="5"></textarea>
+
+                    <button type="submit">Solicitar turno</button>
+                </form>
+            </section>
+        </main>
+        
+    <!-- ================= FOOTER ================= -->
+
+        <footer>
+            <div class="contenido-footer">
+                <p>DPI - Diagnóstico por Imágenes</p>
+                <p>Av. Siempre Viva 742 - Buenos Aires</p>
+                <p>Tel: (011) 4000-0000</p>
+                <p>info@dpi.com.ar</p>
+                <p>&copy; 2026 Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <a href="https://wa.me/5491123456789?text=Hola,%20quisiera%20realizar%20una%20consulta." target="_blank" aria-label="Contactar por WhatsApp">
+            <img src="../Imagenes/LogoWsp.webp" alt="WhatsApp" class="whatsapp">
+        </a>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <!-- Configuracion basica -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+        <title>Contacto DPI | Diagnóstico por Imágenes</title>
+        <meta name="description"
+        content="Ponete en contacto con el Centro DPI para realizar consultas o solicitar información.">
+        <meta name="keywords"
+        content="diagnóstico por imágenes, resonancia magnética, tomografía, radiología, estudios médicos">
+        <meta name="author" content="Leandro Nicolás Oliva">
+    <!-- Favicon -->
+        <link rel="shortcut icon" href="../Imagenes/Logo.png" type="image/x-icon">
+    <!-- Hoja de estilos -->
+        <link rel="stylesheet" href="../styles/styles.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- ================= HEADER ================= -->
+
+        <header>
+            <div class="logo">
+                <img src="../Imagenes/Logo.png" alt="Logo del Centro DPI" width="100">
+                <div>
+                    <h1>DPI - Diagnóstico por Imágenes</h1>
+                    <p>Centro de Diagnóstico por Imágenes</p>
+                </div>
+            </div>
+        </header>
+
+    <!-- ================= NAV viejo================= -->
+        <!-- <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./estudios.html">Estudios</a></li>
+                <li><a href="./turnos.html">Turnos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav> -->
+                <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    DPI
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./estudios.html">Estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./turnos.html">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- ================= MAIN ================= -->
+
+        <main>
+            <section>
+                <h2>Contacto</h2>
+                    <p>
+                        Si tenés alguna consulta sobre nuestros estudios, horarios de atención,
+                        preparación previa o cobertura médica, completá el siguiente formulario.
+                        Nuestro equipo responderá a la brevedad.
+                    </p>
+            </section>
+
+            <section>
+
+                <form>
+                
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" required>
+                
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" required>
+                
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" required>
+                
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="6"></textarea>
+                
+                    <button type="submit">Enviar consulta</button>
+                
+                </form>
+            </section>
+
+            <section>
+                <h3>¿Dónde encontrarnos?</h3>
+                <p>
+                    Próximamente incorporaremos un mapa interactivo con la ubicación del centro.
+                </p>
+            </section>
+        </main>
+
+    <!-- ================= FOOTER ================= -->
+
+         <footer>
+            <div class="contenido-footer">
+                <p>DPI - Diagnóstico por Imágenes</p>
+                <p>Av. Siempre Viva 742 - Buenos Aires</p>
+                <p>Tel: (011) 4000-0000</p>
+                <p>info@dpi.com.ar</p>
+                <p>&copy; 2026 Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <a href="https://wa.me/5491123456789?text=Hola,%20quisiera%20realizar%20una%20consulta." target="_blank" aria-label="Contactar por WhatsApp">
+            <img src="../Imagenes/LogoWsp.webp" alt="WhatsApp" class="whatsapp">
+        </a>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

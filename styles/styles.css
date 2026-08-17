@@ -1,0 +1,228 @@
+/* ACA IMPORTAMOS EL CODIGO QUE TE DA EN GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* RESETAEAMOS LAS CONFIG VISUALES DEL NAVEGADOR */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main{
+    width:90%;
+    margin: 40px auto;
+    max-width: 1200px;
+} */
+ main{
+    width:95%;
+    margin:20px auto;
+}
+/* CON ESTO LE DAMOS COLOR A LAS LETRAS Y SACAMOS LOS PUNTITOS DE VIÑETAS */
+.menu {
+list-style-type: none;
+/* ACA USAMOS LA FUENTE EN EL SEGMENTO QUE QUERAMOS */
+font-family: "Playwrite GB S", cursive;
+font-size: 20px;
+/* Alineamos */
+list-style:none;
+text-align:center;
+}
+/* CON ESTO LE DECIMOS QUE EL MENU NO SEAN EN BLOQUE SI NO, EN UNA LINEA
+UNO AL LADO DEL OTRO */
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+/* PARA CAMBIAR EL COLOR A LOS HIPERVINCULOS SE USA ASI */
+.menu li a:hover{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+}
+/* ACA CONFIG PARA HEADER */
+/* header{
+    background-color:#0D3B66;
+    color: white;
+    text-align:center;
+    padding: 20px;
+} */
+ header{
+    background-color:#0D3B66;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+/* Tamaño de logo */
+.logo img{
+    width: 110px;
+}
+/* Solo a los h1 */
+header h1{
+    margin-top:10px;
+    font-size:28px;
+}
+header p{
+    margin-top:5px;
+    font-size:16px;
+}
+/* Aplicamos a todo el body la fuente importada mas arriba */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F7FA;
+    color: #4B5563;
+}
+/* Aplicamos a los nav que es la barra de hipervinculp a las paginas */
+nav{
+    background-color:#4DA8DA;
+    padding:15px 0;
+}
+/* Aplicamos espacio edl borde izq */
+section{
+    background-color: white;
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 10px;
+}
+p{
+    line-height:1.6;
+}
+.hero{
+    background-color:white;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+    margin-bottom:40px;
+}
+.hero h2 {
+    color:#0D3B66;
+    font-size:32px;
+    margin-bottom:20px;
+}
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+/* PAGINA ESTUDIOS (todas imagenes mismo tamaño y alineadas)*/
+.estudios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contenido-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.nosotros {
+background-color:white;
+    padding: 20px;
+    border-radius:10px;
+    text-align:center;
+}h2{
+    color:#0D3B66;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+h3{
+    color:#4DA8DA;
+    margin-bottom:10px;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+/* FORMULARIOS */
+form{
+    margin-top:20px;
+}
+label{
+    display: block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #CCCCCC;
+    border-radius:5px;
+    font-family:inherit;
+}
+button{
+    margin-top:20px;
+    background:#0D3B66;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background:#4DA8DA;
+}
+
+/* FOOTER */
+footer{
+    background:#0D3B66;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+footer p{
+    margin:6px 0;
+}
+
+/* ICONO WATHSAPP */
+.whatsapp{
+    width:60px;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    transition:transform .3s;
+}
+.whatsapp:hover{
+    transform:scale(1.30);
+}
+/* ================= MEDIA QUERIES ================= */
+/* @media (min-width: 768px){
+    main{
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+} */
+ @media (min-width: 768px){
+    main{
+        width:90%;
+        max-width:1200px;
+        margin:40px auto;
+    }
+    header{
+        padding:20px;
+    }
+    .logo img{
+        width:150px;
+    }
+    header h1{
+        font-size:38px;
+    }
+    header p{
+        font-size:18px;
+    }
+}
