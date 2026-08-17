@@ -1,0 +1,20 @@
+@use "variables";
+
+/* FOOTER */
+.contenido-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+footer {
+    background: variables.$color-principal;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    p {
+        margin: 6px 0;
+    }
+}

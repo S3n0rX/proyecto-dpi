@@ -1,0 +1,24 @@
+@use "variables";
+@use "mixins";
+/* HEADER */
+header {
+    background-color: variables.$color-principal;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.logo {
+    @include mixins.centrado;
+    gap: 25px;
+    img {
+        width: 110px;
+    }
+}
+header h1 {
+    margin-top: 10px;
+    font-size: 28px;
+}
+header p {
+    margin-top: 5px;
+    font-size: 16px;
+}

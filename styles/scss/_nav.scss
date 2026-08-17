@@ -1,0 +1,26 @@
+@use "variables";
+
+/* MENU */
+.menu {
+    list-style-type: none;
+    font-family: "Playwrite GB S", cursive;
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    li {
+        a:hover {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+/* NAV */
+nav {
+    background-color: variables.$color-secundario;
+    padding: 15px 0;
+}

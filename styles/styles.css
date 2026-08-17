@@ -1,38 +1,5 @@
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-/* VARIABLES */
-/* MIXINS */
-/* RESETEO */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* MAIN */
-main {
-  width: 95%;
-  margin: 20px auto;
-}
-
-/* MENU */
-.menu {
-  list-style-type: none;
-  font-family: "Playwrite GB S", cursive;
-  font-size: 20px;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.menu li a:hover {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
 /* HEADER */
 header {
   background-color: #0D3B66;
@@ -61,17 +28,48 @@ header p {
   font-size: 16px;
 }
 
-/* BODY */
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #F5F7FA;
-  color: #4B5563;
+/* MENU */
+.menu {
+  list-style-type: none;
+  font-family: "Playwrite GB S", cursive;
+  font-size: 20px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.menu li a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 /* NAV */
 nav {
   background-color: #4DA8DA;
   padding: 15px 0;
+}
+
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN */
+main {
+  width: 95%;
+  margin: 20px auto;
+}
+
+/* BODY */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F5F7FA;
+  color: #4B5563;
 }
 
 /* SECCIONES */
@@ -95,9 +93,7 @@ p {
   margin-bottom: 40px;
 }
 .hero h2 {
-  color: #0D3B66;
   font-size: 32px;
-  margin-bottom: 20px;
 }
 .hero p {
   font-size: 18px;
@@ -111,16 +107,7 @@ p {
   gap: 25px;
 }
 
-/* FOOTER */
-.contenido-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-/* NOSOTROS */
+/* PAGINA NOSOTROS */
 .nosotros {
   background-color: white;
   padding: 20px;
@@ -129,9 +116,12 @@ p {
 }
 
 /* TITULOS */
-h2 {
+.titulo-base, h2, .hero h2 {
   color: #0D3B66;
   margin-bottom: 20px;
+}
+
+h2 {
   font-size: 2rem;
 }
 
@@ -144,6 +134,38 @@ h3 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  header {
+    padding: 20px;
+  }
+  .logo img {
+    width: 150px;
+  }
+  header h1 {
+    font-size: 38px;
+  }
+  header p {
+    font-size: 18px;
+  }
+}
+/* ICONO WHATSAPP */
+.whatsapp {
+  width: 60px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  transition: transform 0.3s;
+}
+.whatsapp:hover {
+  transform: scale(1.3);
 }
 
 /* FORMULARIOS */
@@ -182,6 +204,14 @@ button:hover {
 }
 
 /* FOOTER */
+.contenido-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 footer {
   background: #0D3B66;
   color: white;
@@ -191,39 +221,6 @@ footer {
 }
 footer p {
   margin: 6px 0;
-}
-
-/* ICONO WHATSAPP */
-.whatsapp {
-  width: 60px;
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  transition: transform 0.3s;
-}
-.whatsapp:hover {
-  transform: scale(1.3);
-}
-
-/* ================= MEDIA QUERIES ================= */
-@media (min-width: 768px) {
-  main {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-  header {
-    padding: 20px;
-  }
-  .logo img {
-    width: 150px;
-  }
-  header h1 {
-    font-size: 38px;
-  }
-  header p {
-    font-size: 18px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

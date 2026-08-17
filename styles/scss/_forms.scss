@@ -1,0 +1,33 @@
+@use "variables";
+/* FORMULARIOS */
+form {
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid variables.$color-borde;
+    border-radius: 5px;
+    font-family: inherit;
+}
+button {
+    margin-top: 20px;
+    background: variables.$color-principal;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background: variables.$color-secundario;
+    }
+}
