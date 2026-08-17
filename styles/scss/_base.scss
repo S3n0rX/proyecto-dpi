@@ -50,6 +50,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    transition: transform .3s;
+}
+
+.estudios:hover {
+    transform: translateY(-5px);
 }
 /* PAGINA NOSOTROS */
 .nosotros {
