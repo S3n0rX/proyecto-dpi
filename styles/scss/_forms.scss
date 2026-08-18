@@ -1,4 +1,5 @@
 @use "variables";
+
 /* FORMULARIOS */
 form {
     margin-top: 20px;
@@ -15,19 +16,30 @@ textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid variables.$color-borde;
-    border-radius: 5px;
+    border-radius: 8px;
     font-family: inherit;
 }
-button {
+
+/* CHECKBOX */
+input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+/* BOTÓN */
+button,
+button.btn {
     margin-top: 20px;
     background: variables.$color-principal;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-
-    &:hover {
-        background: variables.$color-secundario;
-    }
+}
+button:hover,
+button.btn:hover {
+    background: variables.$color-secundario;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 /* HEADER */
@@ -50,28 +51,28 @@ header p {
     transform: translateY(0);
   }
 }
-/* MENU */
-.menu {
-  list-style-type: none;
-  font-family: "Playwrite GB S", cursive;
-  font-size: 20px;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.menu li a:hover {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
 /* NAV */
 nav {
   background-color: #4DA8DA;
   padding: 15px 0;
+}
+
+.navbar-nav {
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.nav-link {
+  color: #4B5563;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: white !important;
+  font-weight: bold;
+}
+.nav-link:focus {
+  color: white !important;
 }
 
 /* RESETEO */
@@ -100,6 +101,7 @@ section {
   margin-bottom: 35px;
   padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 p {
@@ -124,16 +126,45 @@ p {
 
 /* PAGINA ESTUDIOS */
 .estudios {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 25px;
-  transition: transform 0.3s;
+  margin-bottom: 50px;
+}
+.estudios h3,
+.estudios p {
+  grid-column: 1/-1;
+}
+.estudios img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  background-color: #000;
+  border-radius: 8px;
+  display: block;
 }
 
 .estudios:hover {
   transform: translateY(-5px);
 }
 
+.estudios h3,
+.estudios p {
+  grid-column: 1/-1;
+}
+
+/* ESTUDIOS EN ESCRITORIO */
+@media (min-width: 768px) {
+  .estudios {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    padding: 30px;
+  }
+  .estudios h3,
+  .estudios p {
+    grid-column: 1/-1;
+  }
+}
 /* PAGINA NOSOTROS */
 .nosotros {
   background-color: white;
@@ -161,6 +192,7 @@ h3 {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 /* MEDIA QUERIES */
@@ -181,6 +213,18 @@ img {
   }
   header p {
     font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .estudios {
+    grid-template-columns: 1fr;
+  }
+  .estudios h3,
+  .estudios p {
+    grid-column: 1;
+  }
+  .estudios img {
+    height: auto;
   }
 }
 /* ICONO WHATSAPP */
@@ -213,20 +257,32 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #CCCCCC;
-  border-radius: 5px;
+  border-radius: 8px;
   font-family: inherit;
 }
 
-button {
+/* CHECKBOX */
+input[type=checkbox] {
+  width: auto;
+  padding: 0;
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+}
+
+/* BOTÓN */
+button,
+button.btn {
   margin-top: 20px;
   background: #0D3B66;
   color: white;
   border: none;
   padding: 12px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
-button:hover {
+
+button:hover,
+button.btn:hover {
   background: #4DA8DA;
 }
 
